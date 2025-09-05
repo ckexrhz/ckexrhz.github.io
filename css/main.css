@@ -1,12 +1,64 @@
-@import url(bootstrap.min.css);
-li.nav-item .nav-link[aria-current='page'] {
-  color: #ef8354;
-  border-bottom: solid #ef8354;
+body {
+  background: linear-gradient(
+      rgb(14 14 23 / var(--bg-dim)),
+      rgb(14 14 23 / var(--bg-dim))
+    ),
+    linear-gradient(to bottom, var(--project-red) 0, var(--project-dark) 40%);
+
+  color: var(--project-red);
+  font-size: 1.425rem;
 }
-li.nav-item .nav-link {
-  color: #4b88a2;
-  border-bottom: solid transparent;
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 90%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
 }
-nav ul {
-  background-color: #fff;
+body::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: var(--scan-opacity);
+  background: repeating-linear-gradient(to bottom, #0000 0 2px, #000 2px 3px);
+  mix-blend-mode: overlay;
+}
+.nav-link {
+  color: var(--project-cyan);
+}
+.navbar .nav-link {
+  border-block-end: var(--border-w) solid transparent;
+  padding-block: 0.25rem;
+  padding-inline: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+  text-decoration: none;
+  border-block-end-color: currentColor;
+  color: var(--project-cyan);
+}
+.navbar {
+  border-bottom: 0.125rem solid var(--project-red);
+}
+
+.navbar .nav-link[aria-current='page'] {
+  color: var(--project-cyan);
+  border-block-end-color: var(--project-cyan);
+}
+
+.hz-logo {
+  height: var(--nav-logo-h);
+  width: auto;
+  display: block;
+}
+footer {
+  border-top: 0.125rem solid var(--project-red);
 }

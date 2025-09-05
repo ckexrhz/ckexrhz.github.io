@@ -2,41 +2,101 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/main.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/typography.css">
+  <link rel="stylesheet" href="/css/variables.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/preloader.css" />
+  <meta name="description" content="Wake up samurai" />
   <title>Home</title>
 </head>
 
-<body>
-  <nav class="fixed-top">
-    <ul class="nav align-items-center justify-content-center fixed-top">
-      <li class="nav-item">
-        <a class="nav-link  d-inline-flex" aria-current="page" href="index.html">
-          Home
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-link1 d-inline-flex " href="profile.html">
-          Profile
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-link1 d-inline-flex " href="dashboard.html">
-          Dashboard
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link  d-inline-flex" href="blog.html">
-          Blog
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link  d-inline-flex" href="faq.html">
-          FAQ
-        </a>
-    </ul>
+<body class="d-flex flex-column min-vh-100">
+  <div class="pre" aria-hidden="true">
+    <div class="pre_inner">
+      <div class="pre_logo">
+        <img src="resources/loading-logo-red.png" alt="Cyberpunk loading logo" class="pre_logo_img">
+      </div>
+      <div class="pre_title">THE NIGHT CITY<br>CITIZENS DATABASE</div>
+
+      <div class="pre_bar"><span class="pre_fill"></span></div>
+      <div class="pre_label">LOADING…</div>
+    </div>
+  </div>
+
+
+
+  <nav class="navbar sticky-top" aria-label="Main navigation">
+    <div class="container justify-content-center">
+
+      <ul class="navbar-nav flex-row flex-wrap gap-3 ">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+      </ul>
+
+    </div>
   </nav>
+
+  <main class="container py-4 ">
+    <!-- placeholder -->
+    <header class="home-hero">
+      <h1>Hi, I’m Arthur — HBO-ICT at HZ</h1>
+      <p class="tagline">Why this programme fits me: motivated peers, practical projects, and room to grow as a teammate
+        and a leader.</p>
+    </header>
+
+    <section aria-labelledby="why-fit">
+      <h2 id="why-fit">Why HBO-ICT fits me</h2>
+      <p>I’ve been looking for a place where I’m surrounded by motivated future professionals—people who push each other
+        to aim higher. HBO-ICT gives me exactly that: a practice-first environment with real assignments, clear
+        expectations, and frequent feedback. I learn best by building things with others, reflecting on outcomes, and
+        iterating.</p>
+      <p>The structure also matches how I work: concrete milestones (EC progress and the NBSA threshold), transparent
+        criteria, and teamwork as the default. I want to improve how I collaborate, facilitate discussions, and take
+        responsibility for outcomes—not just deliver tasks, but help a group move forward.</p>
+    </section>
+
+    <section aria-labelledby="focus">
+      <h2 id="focus">What I’m here to practice</h2>
+      <ul>
+        <li><strong>Teamwork at pace:</strong> planning in small increments, sharing progress, and unblocking each other
+          quickly.</li>
+        <li><strong>Leadership in practice:</strong> taking micro-roles (facilitator, task owner, reviewer), making
+          decisions, and owning results.</li>
+        <li><strong>Communication:</strong> clear written updates, concise demos, and constructive feedback during
+          reviews.</li>
+        <li><strong>Problem framing:</strong> clarifying requirements, agreeing on priorities, and aligning on success
+          criteria.</li>
+        <li><strong>Professional habits:</strong> consistent documentation, versioning discipline, and learning from
+          retrospectives.</li>
+      </ul>
+    </section>
+    <!-- placeholder -->
+
+  </main>
+
+  <footer class="mt-auto py-3 footer">
+    <div class="container">
+      <div class="d-flex justify-content-end align-items-center gap-3 flex-wrap">
+        <span class="text-muted">Artur Golubcov artur.golubkov@gmail.com</span>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
