@@ -1,0 +1,28 @@
+.nav-link {
+  color: var(--project-cyan);
+}
+.navbar .nav-link {
+  border-block-end: var(--border-w) solid transparent;
+  padding-block: 0.25rem;
+  padding-inline: 0;
+  text-decoration: none;
+  outline: none;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+  text-decoration: none;
+  border-block-end-color: currentColor;
+  color: var(--project-cyan);
+}
+.navbar {
+  border-bottom: 0.125rem solid var(--project-red);
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+  background: transparent;
+}
+
+.navbar .nav-link[aria-current='page'] {
+  color: var(--project-cyan);
+  border-block-end-color: var(--project-cyan);
+}

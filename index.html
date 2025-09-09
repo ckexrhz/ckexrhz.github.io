@@ -8,25 +8,14 @@
   <link rel="stylesheet" href="/css/typography.css">
   <link rel="stylesheet" href="/css/variables.css" />
   <link rel="stylesheet" href="/css/main.css" />
-  <link rel="stylesheet" href="/css/preloader.css" />
-  <meta name="description" content="Wake up samurai" />
+  <link rel="stylesheet" href="../css/navbar.css">
+  <meta name="description" content="Home page describing ICT" />
   <title>Home</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-  <div class="pre" aria-hidden="true">
-    <div class="pre_inner">
-      <div class="pre_logo">
-        <img src="resources/loading-logo-red.png" alt="Cyberpunk loading logo" class="pre_logo_img">
-      </div>
-      <div class="pre_title">THE NIGHT CITY<br>CITIZENS DATABASE</div>
+<body class="d-flex flex-column">
 
-      <div class="pre_bar"><span class="pre_fill"></span></div>
-      <div class="pre_label">LOADING…</div>
-    </div>
-  </div>
-
-
+  <div class="pre" id="preloader" aria-hidden="true"></div>
 
   <nav class="navbar sticky-top" aria-label="Main navigation">
     <div class="container justify-content-center">
@@ -52,29 +41,38 @@
     </div>
   </nav>
 
-  <main class="container py-4 ">
-    <!-- placeholder -->
-    <header class="home-hero">
-      <h1>Hi, I’m Arthur — HBO-ICT at HZ</h1>
-      <p class="tagline">Why this programme fits me: motivated peers, practical projects, and room to grow as a teammate
-        and a leader.</p>
+  <main class="container py-4" aria-label="Main section">
+
+    <header class="home-header d-flex justify-content-center align-items-center">
+      <h1>Wake up samurai</h1>
     </header>
+
+    <section class="home-header-2 d-flex justify-content-center align-items-center flex-column"
+      aria-labelledby="come-join">
+      <h2 id="come-join">
+        And come study ICT at HZ with me
+      </h2>
+      <img src="resources/hz-logo-red.png" alt="HZ logo" class="hz-logo">
+    </section>
 
     <section aria-labelledby="why-fit">
       <h2 id="why-fit">Why HBO-ICT fits me</h2>
-      <p>I’ve been looking for a place where I’m surrounded by motivated future professionals—people who push each other
-        to aim higher. HBO-ICT gives me exactly that: a practice-first environment with real assignments, clear
-        expectations, and frequent feedback. I learn best by building things with others, reflecting on outcomes, and
-        iterating.</p>
+      <p>This is a place where you are surrounded by motivated future professionals—people who push each other
+        to aim higher. HBO-ICT gives a practice-first environment with real assignments, clear
+        expectations, and frequent feedback. Learning is best by building things with others, reflecting on outcomes,
+        and iterating.</p>
+      <br>
       <p>The structure also matches how I work: concrete milestones (EC progress and the NBSA threshold), transparent
         criteria, and teamwork as the default. I want to improve how I collaborate, facilitate discussions, and take
-        responsibility for outcomes—not just deliver tasks, but help a group move forward.</p>
+        responsibility for outcomes. Not just deliver tasks, but help a group move forward.</p>
     </section>
 
-    <section aria-labelledby="focus">
+    <section aria-labelledby="focus" class="py-4">
       <h2 id="focus">What I’m here to practice</h2>
+      <br>
       <ul>
-        <li><strong>Teamwork at pace:</strong> planning in small increments, sharing progress, and unblocking each other
+        <li><strong>Teamwork at pace:</strong> planning in small increments, sharing progress, and unblocking each
+          other
           quickly.</li>
         <li><strong>Leadership in practice:</strong> taking micro-roles (facilitator, task owner, reviewer), making
           decisions, and owning results.</li>
@@ -86,17 +84,15 @@
           retrospectives.</li>
       </ul>
     </section>
-    <!-- placeholder -->
 
   </main>
 
-  <footer class="mt-auto py-3 footer">
-    <div class="container">
-      <div class="d-flex justify-content-end align-items-center gap-3 flex-wrap">
-        <span class="text-muted">Artur Golubcov artur.golubkov@gmail.com</span>
-      </div>
-    </div>
-  </footer>
+  <div id="footer"></div>
+
+
+  <script src="../js/partials.js"></script>
+  <script src="../js/preloader.js"></script>
+
 </body>
 
 </html>

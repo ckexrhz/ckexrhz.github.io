@@ -1,59 +1,64 @@
 body {
-  background: linear-gradient(
+  background: radial-gradient(
+      ellipse at center,
+      transparent 90%,
+      rgba(0, 0, 0, 0.65) 100%
+    ),
+    linear-gradient(
       rgb(14 14 23 / var(--bg-dim)),
       rgb(14 14 23 / var(--bg-dim))
     ),
     linear-gradient(to bottom, var(--project-red) 0, var(--project-dark) 40%);
-
   color: var(--project-red);
   font-size: 1.425rem;
+  min-height: 100vh;
+  background-attachment: fixed, fixed, fixed;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 body::before {
   content: '';
-  position: absolute;
-  inset: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-h);
   pointer-events: none;
-  background: radial-gradient(
-    ellipse at center,
-    transparent 90%,
-    rgba(0, 0, 0, 0.65) 100%
-  );
+  z-index: 1000;
+  background: inherit;
+  background-attachment: fixed, fixed, fixed;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 body::after {
   content: '';
-  position: absolute;
+  position: fixed;
   inset: 0;
   pointer-events: none;
+  height: 100vh;
+  width: 100vw;
   opacity: var(--scan-opacity);
   background: repeating-linear-gradient(to bottom, #0000 0 2px, #000 2px 3px);
-  mix-blend-mode: overlay;
+  /* mix-blend-mode: overlay; */
+  z-index: 1000;
 }
-.nav-link {
-  color: var(--project-cyan);
+.home-header {
+  height: 75vh;
+  margin-bottom: 20vh;
 }
-.navbar .nav-link {
-  border-block-end: var(--border-w) solid transparent;
-  padding-block: 0.25rem;
-  padding-inline: 0;
-  text-decoration: none;
-  outline: none;
+.home-header h1 {
+  font-size: 10rem;
+  font-weight: 900;
 }
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus-visible {
-  text-decoration: none;
-  border-block-end-color: currentColor;
-  color: var(--project-cyan);
+.home-header-2 {
+  height: 75vh;
+  margin-bottom: 20vh;
+  margin-top: 50vh;
 }
-.navbar {
-  border-bottom: 0.125rem solid var(--project-red);
+.home-header-2 h2 {
+  font-size: 5rem;
+  font-weight: 900;
 }
-
-.navbar .nav-link[aria-current='page'] {
-  color: var(--project-cyan);
-  border-block-end-color: var(--project-cyan);
-}
-
 .hz-logo {
   height: var(--nav-logo-h);
   width: auto;
@@ -61,4 +66,9 @@ body::after {
 }
 footer {
   border-top: 0.125rem solid var(--project-red);
+  color: var(--project-red);
+}
+#why-fit {
+  /* text-align: center; */
+  margin-bottom: 2rem;
 }
