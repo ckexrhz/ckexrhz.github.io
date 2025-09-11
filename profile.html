@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/variables.css" />
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="../css/navbar.css">
+  <meta name="description" content="Student profile" />
   <title>Profile</title>
 </head>
 
@@ -38,11 +39,79 @@
     </div>
   </nav>
 
-  <main class="container py-4 ">
-    sad
+  <main class="container py-4" aria-label="Main section">
+
+    <header class="profile-header d-flex justify-content-center align-items-center flex-column">
+      <h1>Who am I</h1>
+      <div class="mb-4">
+        <img src="resources/who-am-i_dark-heavy_v1-removebg-preview.png" alt="who am i" class="profile-avatar"
+          aria-hidden="true">
+      </div>
+    </header>
+
+    <section class="profile-header-2 d-flex justify-content-center align-items-center flex-column"
+      aria-labelledby="i-am">
+      <div class="typing-line">
+        <span class="prompt">></span>
+        <span id="i-am" class="typing-text"></span>
+        <span class="cursor">_</span>
+      </div>
+    </section>
+
+    <section class="mb-5" aria-labelledby="about-me">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2 id="about-me" class="mb-4">About Me</h2>
+          <p class="lead mb-4">
+            I am a guy from Moldova that spent most of his childhood in front of a screen and decided to spend even more
+            time doing so.
+            Gonna be honest, I do not love coding, but i do love the results and the freedom of creativity it gives, so
+            I guess I am stuck with it for now:)
+          </p>
+        </div>
+        <div class="col-lg-4 ">
+          <img src="resources/where-is-my-mind.png" alt="where is my mind" class="img-fluid" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5" aria-labelledby="characteristics">
+      <div class="row justify-content-between">
+        <div class="col-lg-6">
+          <h2 id="characteristics" class="mb-4">Background</h2>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <strong>Programming:</strong> Wrote my first line of code at the age of 15
+            </li>
+            <li class="mb-3">
+              <strong>Academic:</strong> Studied Software Engineering in Cyprus for 2 years
+            </li>
+            <li class="mb-3">
+              <strong>Working:</strong> Did three months summer internship as a backend developer
+            </li>
+            <li class="mb-3">
+              <strong>Sport:</strong> Have been a core member of a waterpolo team
+            </li>
+            <li class="mb-3">
+              <strong>Personal:</strong> Have been both the leadership and collaborative experience
+            </li>
+            <li class="mb-3">
+              <strong>Extraordinary:</strong> I am 3 months sober from League :D
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="image-space vertical-image">
+            <img src="resources/practical-guide.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <div class="mt-auto" id="footer"></div>
+  <img src="resources/you-belong.png" alt="" aria-hidden="true" class="you-belong">
 
   <script src="../js/partials.js"></script>
 </body>

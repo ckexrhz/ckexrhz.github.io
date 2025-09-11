@@ -53,13 +53,28 @@ body::after {
 .home-header-2 {
   height: 75vh;
   margin-bottom: 20vh;
-  margin-top: 50vh;
+  margin-top: 30vh;
 }
 .home-header-2 h2 {
   font-size: 5rem;
   font-weight: 900;
 }
 .hz-logo {
+  height: var(--nav-logo-h);
+  width: auto;
+  display: block;
+}
+.profile-header {
+  height: 75vh;
+  margin-bottom: 40vh;
+  margin-top: 20vh;
+}
+.profile-header h1 {
+  font-size: 10rem;
+  font-weight: 900;
+  margin: 0px;
+}
+.profile-avatar {
   height: var(--nav-logo-h);
   width: auto;
   display: block;
@@ -71,4 +86,145 @@ footer {
 #why-fit {
   /* text-align: center; */
   margin-bottom: 2rem;
+}
+
+.profile-hero .badge {
+  background: transparent;
+  border: 1px solid currentColor;
+  letter-spacing: 0.06em;
+}
+.avatar {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.card,
+.list-group-item,
+.table,
+.accordion-item,
+.dropdown-menu {
+  background: transparent !important;
+  color: inherit;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.profile-header-2 {
+  margin-bottom: 30vh;
+  margin-top: 10vh;
+}
+
+.profile-hero {
+  min-height: 60vh;
+  margin-bottom: 4rem;
+}
+
+.typing-line {
+  display: flex;
+  align-items: center;
+  color: var(--project-red);
+  font-size: 2.5rem;
+  margin-bottom: 15vh;
+}
+
+.prompt {
+  color: var(--project-red);
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.typing-text {
+  color: var(--project-red);
+}
+
+.cursor {
+  color: var(--project-red);
+  animation: cursor-blink 1s infinite;
+  margin-left: 2px;
+}
+
+@keyframes cursor-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+.you-belong {
+  height: 0.5vh;
+  width: 1vw;
+}
+.faq {
+  margin-top: 20vh;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.5rem;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 0.6rem 0.8rem;
+  line-height: 1.35;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  vertical-align: middle;
+  background: transparent;
+  word-break: break-word;
+}
+
+.dashboard-table .dashboard-table-head th {
+  text-align: left;
+  font-weight: 700;
+  color: var(--project-red);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.progress {
+  height: 8px;
+  width: 100%;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  outline: 1px solid rgba(255, 255, 255, 0.16);
+  overflow: hidden;
+}
+
+.progress__bar {
+  height: 100%;
+  width: 0%;
+  background: var(--project-red);
+  transition: width 240ms ease;
+}
+a {
+  color: var(--project-cyan);
+}
+a {
+  border-block-end: var(--border-w) solid transparent;
+  padding-block: 0.25rem;
+  padding-inline: 0;
+  text-decoration: none;
+  outline: none;
+}
+a:hover,
+a:focus-visible {
+  text-decoration: none;
+  border-block-end-color: currentColor;
+  color: var(--project-cyan);
+}
+.blog-header {
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+}
+.blog-header h1 {
+  font-size: 7rem;
+  font-weight: 900;
+  margin: 0px;
+}
+#eye-contact {
+  float: right;
+  width: 25vw;
+  height: auto;
 }

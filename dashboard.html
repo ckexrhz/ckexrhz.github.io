@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="/css/variables.css" />
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="../css/navbar.css">
-  <title>Profile</title>
+  <title>Dashboard</title>
+  <meta name="description" content="Student dashboard" />
+
 </head>
 
 <body class="d-flex flex-column">
@@ -38,8 +40,119 @@
     </div>
   </nav>
 
-  <main class="container py-4 ">
-    sad
+  <main class="container py-4 d-flex justify-content-center flex-column ">
+    <table class="dashboard-table mb-4">
+      <tr class="dashboard-table-head">
+        <th>Q</th>
+        <th>Course</th>
+        <th>EC</th>
+        <th>Exam</th>
+        <th>Grade</th>
+      </tr>
+
+      <tr class="dashboard-table-data group-start">
+        <td rowspan="3">1st</td>
+        <td>Program & Career Orientation</td>
+        <td>2.5</td>
+        <td>Presentation</td>
+        <td>---</td>
+      </tr>
+      <tr class="dashboard-table-data">
+        <td>Computer Science Basics</td>
+        <td>5</td>
+        <td>Written knowledge test</td>
+        <td>---</td>
+      </tr>
+      <tr class="dashboard-table-data group-end">
+        <td>Programming Basics</td>
+        <td>5</td>
+        <td>Written knowledge test</td>
+        <td>---</td>
+      </tr>
+
+      <tr class="dashboard-table-data group-start">
+        <td rowspan="3">2nd</td>
+        <td rowspan="2">Object-Oriented Programming</td>
+        <td rowspan="2">10</td>
+        <td>Presentation</td>
+        <td>---</td>
+      </tr>
+
+      <tr class="dashboard-table-data">
+        <td>Written knowledge test</td>
+        <td>---</td>
+      </tr>
+      <tr class="dashboard-table-data group-end">
+        <td>IT Personality Projectweek 1</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td>---</td>
+      </tr>
+
+      <tr class="dashboard-table-data">
+        <td rowspan="4">3rd</td>
+        <td rowspan="3">Framework Project 1</td>
+        <td rowspan="3">10</td>
+        <td>Written knowledge test</td>
+        <td>---</td>
+      </tr>
+
+      <tr class="dashboard-table-data">
+        <td>Presentation group</td>
+        <td>---</td>
+      </tr>
+
+      <tr class="dashboard-table-data">
+        <td>Portfolio</td>
+        <td>---</td>
+      </tr>
+
+      <tr class="dashboard-table-data">
+        <td>Business Understanding Basics (Part 1)</td>
+        <td rowspan="2">2.5</td>
+        <td rowspan="2">Assignment</td>
+        <td rowspan="2">---</td>
+      </tr>
+
+      <tr class="dashboard-table-data">
+        <td rowspan="4">4th</td>
+        <td>Business Understanding Basics (Part 2)</td>
+      </tr>
+
+      <tr class="dashboard-table-data">
+        <td rowspan="3">Framework Project 2</td>
+        <td rowspan="3">10</td>
+        <td>Presentation</td>
+        <td>---</td>
+      </tr>
+
+      <tr class="dashboard-table-data">
+        <td>Portfolio</td>
+        <td>---</td>
+      </tr>
+
+      <tr class="dashboard-table-data">
+        <td>Portfolio</td>
+        <td>---</td>
+      </tr>
+
+      <tr class="dashboard-table-data">
+        <td>All</td>
+        <td>Personal Professional Development</td>
+        <td>12.5</td>
+        <td>Criterion-referenced interview</td>
+        <td>---</td>
+      </tr>
+
+    </table>
+
+    <div class="mt-4 mb-4">
+      <h2 class="mb-3">Current Progress</h2>
+      <div class="progress" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100"
+        aria-valuenow="0">
+        <div class="progress__bar" style="width:0%"></div>
+      </div>
+    </div>
   </main>
 
   <div class="mt-auto" id="footer"></div>
