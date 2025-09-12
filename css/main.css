@@ -42,6 +42,22 @@ body::after {
   /* mix-blend-mode: overlay; */
   z-index: 1000;
 }
+a {
+  color: var(--project-cyan);
+}
+a {
+  border-block-end: var(--border-w) solid transparent;
+  padding-block: 0.25rem;
+  padding-inline: 0;
+  text-decoration: none;
+  outline: none;
+}
+a:hover,
+a:focus-visible {
+  text-decoration: none;
+  border-block-end-color: currentColor;
+  color: var(--project-cyan);
+}
 .home-header {
   height: 75vh;
   margin-bottom: 20vh;
@@ -205,22 +221,7 @@ footer {
   background: var(--project-red);
   transition: width 240ms ease;
 }
-a {
-  color: var(--project-cyan);
-}
-a {
-  border-block-end: var(--border-w) solid transparent;
-  padding-block: 0.25rem;
-  padding-inline: 0;
-  text-decoration: none;
-  outline: none;
-}
-a:hover,
-a:focus-visible {
-  text-decoration: none;
-  border-block-end-color: currentColor;
-  color: var(--project-cyan);
-}
+
 .blog-header {
   margin-top: 2vh;
   margin-bottom: 10vh;
