@@ -5,10 +5,6 @@
     const mount = document.querySelector(selector);
     if (!mount) return null;
     const res = await fetch(BASE + file);
-    if (!res.ok) {
-      console.error('Partial load failed:', file, res.status);
-      return null;
-    }
     mount.innerHTML = await res.text();
     return mount.firstElementChild;
   };

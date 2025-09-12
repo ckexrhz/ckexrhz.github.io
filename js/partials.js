@@ -11,24 +11,8 @@
     }
   };
 
-  await Promise.all([
-    // loadPartial('#navbar', 'navbar.html'),
-    loadPartial('#footer', 'footer.html'),
-  ]);
+  await Promise.all([loadPartial('#footer', 'footer.html')]);
 
-  // const navRoot = document.querySelector('#navbar');
-  // if (navRoot) {
-  //   const current = (
-  //     location.pathname.split('/').pop() || 'index.html'
-  //   ).toLowerCase();
-  //   navRoot.querySelectorAll('.navbar .nav-link').forEach((a) => {
-  //     const href = (a.getAttribute('href') || '').toLowerCase();
-  //     if (href === current) a.setAttribute('aria-current', 'page');
-  //     else a.removeAttribute('aria-current');
-  //   });
-  // }
-
-  // Terminal typing animation
   const terminalText = document.getElementById('i-am');
   if (terminalText) {
     const texts = [
@@ -40,17 +24,17 @@
       '   ',
       'Arthur :)',
     ];
-    
+
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
     let typeSpeed = 100;
     let deleteSpeed = 50;
     let pauseTime = 2000;
-    
+
     function typeText() {
       const currentText = texts[textIndex];
-      
+
       if (isDeleting) {
         terminalText.textContent = currentText.substring(0, charIndex - 1);
         charIndex--;
@@ -60,9 +44,9 @@
         charIndex++;
         typeSpeed = 100;
       }
-      
+
       if (!isDeleting && charIndex === currentText.length) {
-        if (terminalText.textContent === "Arthur :)") {
+        if (terminalText.textContent === 'Arthur :)') {
           return;
         }
         typeSpeed = pauseTime;
@@ -75,7 +59,7 @@
 
       setTimeout(typeText, typeSpeed);
     }
-    
+
     setTimeout(typeText, 1000);
   }
 })();
